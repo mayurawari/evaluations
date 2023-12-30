@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* NAVBAR  */
+
+        nav {
+            padding: 10px;
+            background-color: rgb(20, 20, 20);
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav>ul>li {
+            list-style: none;
+        }
+
+        nav>ul>li>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* MAIN  */
+
+        main {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20180404140346-GettyImages-713835137.jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        main>.box1 {
+            margin-right: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 30%;
+            height: 60vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        main>.box1>div {
+            margin: 10px;
+        }
+
+        /* google  */
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* table  */
+        table {
+            width: 100%;
+            height: 20vh;
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid;
+            text-align: start;
+        }
+
+        /* LAST ELEMENT  */
+        .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: black;
+            width: 100%;
+            height: 1 style="color:white;" 00vh;
+        }
+
+        .block>.container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="#">LIPS</a></li>
+            <li><a href="#">EYES</a></li>
+            <li><a href="#">FACE</a></li>
+            <li><a href="#">NAILS</a></li>
+            <li><a href="#">SKINCARE</a></li>
+            <li><a href="#">ACCESORIES</a></li>
+            <li><a href="#">GIFTS & KITS</a></li>
+            <li><a href="#">BESTSELLERS</a></li>
+            <li><a href="#">NEW LAUNCHES</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">BLOG</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN  -->
+    <main>
+        <div class="box1">
+            <div>
+                <label for="name">enter your name:</label>
+
+                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+            </div>
+
+            <div>
+                <label for="email">enter your email:</label>
+
+                <input type="email" id="email" name="name" required minlength="4" maxlength="8" size="10" />
+            </div>
+
+            <div>
+                <label for="pet-select">Choose a pet:</label>
+
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Select a maintenance drone:</legend>
+
+                    <div>
+                        <input type="radio" id="huey" name="drone" value="huey" checked />
+                        <label for="huey">Huey</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="dewey" name="drone" value="dewey" />
+                        <label for="dewey">Dewey</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="louie" name="drone" value="louie" />
+                        <label for="louie">Louie</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="camp-week">Choose a time for your appointment:</label>
+                <br>
+                <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required />
+            </div>
+
+            <div>
+                <button style="border: none;padding: 10px;border-radius: 10px;background-color: yellow;">
+                    Subscribe!
+                </button>
+            </div>
+        </div>
+
+        <div class="box2">
+            <p><i style="color: white;">GET YOUR TICKET AT HALF PRICE UNTIL DEC 2023 <br> <br> HURRY UP, LIMITED
+                    SEATS</i>
+            </p>
+            <div style="margin-top: 40px;">
+                <button style="color: white; background-color: blue; padding: 10px; border: none;">REGISTER NOW</button>
+                <button style="border: 5px solid blue;padding: 5px;color: black;margin-left: 10px;">LEARN NOW</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- video  -->
+    <div style="display: flex;flex-direction: column; justify-content: center;align-items: center;margin: 100px;">
+
+        <p
+            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; font-size: xx-large;margin-bottom: 40px;">
+            FLOWER VIDEO</p>
+
+        <video style="width: 600px;" controls src="./flower_376567 (1).webm"></video>
+
+    </div>
+
+    <!-- google  -->
+
+    <div class="logo">
+        <div><img style="width: 200px;" src="https://logowik.com/content/uploads/images/google-logo-2020.jpg" alt="$">
+        </div>
+        <div><img style="width: 200px;" src="https://funnel.io/hubfs/HubSpot-Logo.png" alt="$"></div>
+        <div><img style="width: 200px;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Vodafone_Idea_logo.svg/1200px-Vodafone_Idea_logo.svg.png"
+                alt="$"></div>
+        <div><img style="width: 200px;" src="https://www.bibs.co.in/blog-image/1634715395.jpg" alt="$"></div>
+    </div>
+
+    <!-- table  -->
+
+    <table style="margin-bottom: 50px;">
+
+        <thead>
+            <tr>
+                <th>lime</th>
+                <th>knocky</th>
+                <th>flor</th>
+                <th>ella</th>
+                <th>juan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>breed</td>
+                <td>jack russell</td>
+                <td>poodle</td>
+                <td>street dog</td>
+                <td>cocker spaniel</td>
+            </tr>
+            <tr style="background-color: teal;">
+                <td>age</td>
+                <td>16</td>
+                <td>9</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>owner</td>
+                <td>mother-in-law</td>
+                <td>me</td>
+                <td>me</td>
+                <td>sister-in-law</td>
+            </tr>
+            <tr style="background-color: teal;">
+                <td>eating habits</td>
+                <td>eats everyone</td>
+                <td>nibbles at food</td>
+                <td>hearty eater</td>
+                <td>will eat tills</td>
+            </tr>
+            <tr>
+                <td colspan="4">total</td>
+                <td>40</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <!-- last element  -->
+
+    <div class="block">
+
+        <p style="color:white; margin-top: 100px;">16 SPEAKRS FROM 7 COUNTRIES AND 3 CONTTINENTS</p>
+        <p style="color:white;font-size: 40.5px;margin-bottom: 50px;">MEET OUR SPEAKERS</p>
+
+        <div class="container">
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+            <div class="item">
+
+                <div><img style="width: 150px;"
+                        src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg"
+                        alt="@"></div>
+                <h3 style="color:white;font-size:x-large;">varun <br><span
+                        style="color: rgb(171,29,121);font-size: xx-large;"> bhat</span></h3>
+                <p style="color:white;">Brand manager at @PEPSI</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer style="display: flex;flex-direction: column;justify-content: center;align-items: center;width: 100%;background-color: rgb(232,232,232);">
+        <div>
+            <span class="material-symbols-outlined">
+                star
+            </span><span class="material-symbols-outlined">
+                star
+            </span><span class="material-symbols-outlined">
+                star
+            </span><span class="material-symbols-outlined">
+                star
+            </span><span class="material-symbols-outlined">
+                star
+            </span>
+        </div>
+        <div style="display: flex;justify-content: center;gap: 40px;align-items: center;margin: 10px;border: 1px solid;width: 100%;">
+            <div style="margin: 20px;" class="child">Stores</div>
+            <div style="margin: 20px;" class="child">Elite</div>
+            <div style="margin: 20px;" class="child">Terms & Condition</div>
+            <div style="margin: 20px;" class="child">Returns</div>
+            <div style="margin: 20px;" class="child">FAQs</div>
+            <div style="margin: 20px;" class="child">About us</div>
+        </div>
+        <p style="margin-left: -1000px;font-weight: 800;font-size: xx-large;">Get In Touch</p>
+        <div style="display: flex;gap: 40px;margin-left: -625px;margin-top: 40px;">
+            <div class="cont">Instagram <img style="width: 20px;" src="data:image/png;base64,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" alt="insta"></div>
+            <div class="cont">Support</div>
+            <div class="cont">careers</div>
+            <div class="cont">Press Media</div>
+            <div class="cont">Influencer collab</div>
+        </div>
+        <div style="display: flex;gap: 40px;margin-left: -450px;margin-top: 40px;">
+            <div class="cont">Facebook <img style="width: 20px;" src="data:image/png;base64,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" alt="fb"></div>
+            <div class="cont">hello@sugarcosmetics.com</div>
+            <div class="cont">We're hiring! </div>
+            <div class="cont">pr@sugarcosmetics.com</div>
+            <div class="cont">join us</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
